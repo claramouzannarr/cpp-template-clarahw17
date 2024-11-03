@@ -3,8 +3,8 @@
 
 // Example test for readBook function
 TEST(ZipfsTest, ReadBook) {
-    auto book = session17::readBook("moby_dick.txt");  // Make sure this file path is correct or use a mock
-    EXPECT_GT(book.size(), 0);  // Check that the book vector is not empty
+    auto book = session17::readBook("moby_dick.txt");  
+    EXPECT_GT(book.size(), 0);  
 }
 
 // Example test for computeWordFrequency function
