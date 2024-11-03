@@ -3,5 +3,10 @@
 include_directories(${CMAKE_SOURCE_DIR}/include)
 add_library(some_library SHARED some_library.cpp)
 
-# You can also add any stand alone executables
-# add_executable(example main.cpp) # Will make a binary called "example" inside build/bin using main.cpp
+# Add executables for each main file
+add_executable(main_zipfs_containers main_zipfs_containers.cpp)
+add_executable(main_zipfs_algorithms main_zipfs_algorithms.cpp)
+
+# Link the include directory to both executables
+target_include_directories(main_zipfs_containers PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(main_zipfs_algorithms PRIVATE ${CMAKE_SOURCE_DIR}/include)
