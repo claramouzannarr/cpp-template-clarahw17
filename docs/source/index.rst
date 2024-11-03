@@ -1,13 +1,13 @@
-|project| documentation
+|project| Documentation
 ===================================
 
 Welcome to the landing page!
 
-A section
+A Section
 ----------
 
-.. doxygennamespace:: homework
-
+.. doxygennamespace:: clara
+   :project: clara  
 
 Docs
 ====
@@ -15,4 +15,3 @@ Docs
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
